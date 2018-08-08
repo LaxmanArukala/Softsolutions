@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="logic.js">
+  <script type="text/javascript" src="angular.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="popper.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  
+</head>
+<body ng-app="">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">SOFT SOLUTION</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">ABOUT US</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          TECHNOLOGY
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">PHP</a>
+          <a class="dropdown-item" href="#">MySql</a>
+          <a class="dropdown-item" href="#">Mobile Applications</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Java</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contactus.html">CONTACT US</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+<div>
+  <img src="images/12.jpg" class="banner">
+  
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-6" style="color: #017ADE; margin: 30px 0px;">
+  <h4>CONTACT US</h4>
+  
+</div>
+<div class="col-md-6" style="color: #017ADE; margin: 30px 0px;">
+  <h4>Get Quick Note</h4>
+</div>
+</div>
+  <div class="row">
+  <div class="col-md-6">
+     <span>SOFT SOLUTIONS Pvt.Ltd</span><br>
+     <span>Some Adress</span><br>
+     <span>some Adress</span><br>
+     <span>040-256478</span><br>
+     <span>info@softsolutions.com</span>
+     </div>
+
+     <div class="col-md-6">     
+    <form name="myForm">
+     <ul class="form-group">
+
+     <li><input type="text" name="fname" ng-model="txt1" placeholder="Enter Your Name" class="form-control input-sm" required=""></li>
+     <span ng-show="myForm.fname.$touched && myForm.fname.$invalid" class="error">Enter Your Name</span>
+
+     <li><input type="email" name="fmail" placeholder="Enter EmailId" class="form-control input-sm" required="">
+     </li>
+     <span ng-show="myForm.fmail.$touched && myForm.fmail.$invalid" class="error">Enter Your EmailId</span>
+
+     <li><input type="text" name="mobile" placeholder="Enter Mobile Number" class="form-control input-sm"></li>
+       <span ng-show="myForm.mobile.$touched && myForm.mobile.$invalid" class="error">Enter Your MobileNumber</span>
+     <li><textarea placeholder="Requirements" class="form-control input-sm"></textarea></li>
+
+     <li><input type="button" value="Submit" class="btn btn-primary btn-sm">
+     <input type="reset" value="Reset" class="btn btn-primary btn-sm" style="margin-left: 10px;">
+     </li> 
+    </ul>
+       </form>
+   </div>
+   </div>
+  </div>
+  <footer>
+  <div class="col-md-12">
+    <span class="social1">Follow us on:</span>
+    <span>
+    <a href="#"><img src="images/fb.png" class="social"></a>
+    <a href="#"><img src="images/twit.png" class="social"></a>
+    <a href="#"><img src="images/insta.png" class="social"></a></span>
+    
+  </div>
+  <div class="col-md-12">
+    <span class="detail">Soft Soluitions Pvt.ltd</span><br>
+    <div class="detail1">
+    <span><span style="color: #dbbcbc"><b>phone:</b></span>040-69958746</span>
+    <span><span style="color: #dbbcbc"><b>mail:</b></span>info@softsolutions.com</span>
+  </div>
+  </div>
+</footer>
+</body>
+</html>

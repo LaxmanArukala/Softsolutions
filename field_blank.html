@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Field should not be blank</title>
+	<script type="text/javascript">
+		function field(){
+	var fn=document.myForm.form-group.fname.value;
+	if(fn==""){
+		document.getElementById("txt").innerHTML="Field Should Not be Blank";
+	}
+	else{
+       alert("thank u");
+	}
+}
+	</script>
+</head>
+<body>
+<form>
+	<input type="text" name="fname" onblur="field()" placeholder="name">
+	<span id="txt"></span>
+</form>
+
+</body>
+</html>
